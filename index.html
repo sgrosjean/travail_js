@@ -17,12 +17,25 @@
 	<button class="3" type="button">Envoyer</button>
 
 	<div class="alert1">Veuillez remplir le champ</div>
+	<div class="affiche_nom">
+		tata
+	</div>
 </body>
 </html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript">
-	$('3').click(function(){
-		
+	$('.3').click(function(){
+		if($('.1').val()==''){
+			$('.alert1').show('slow');
+		}
 	}
 		)
+
+	var tableau = ["Nicolas", "Sonya"];
+
+	$('.affiche_nom').html(tableau[0]);
+	for (var i = 0; i < tableau.length ; i++) {
+		
+	};
+
 </script>
